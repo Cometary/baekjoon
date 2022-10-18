@@ -7,7 +7,7 @@ package com.example.demo;
 		public class Quiz4344 {
 
 		public static void main(String[] args) {
-			
+			// 평균은 넘겠지
 			Scanner scan = new Scanner(System.in);
 			// 처음 숫자 입력
 			int size = scan.nextInt();

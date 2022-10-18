@@ -4,14 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class QuizFiv {
+public class Quiz1316 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-
+		// 그룹 단어 체커
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(br.readLine());
-		// 몇개 일까요?
 		int count = 0;
 		
 		for(int i=0; i<N; i++) {
@@ -44,3 +43,4 @@ public class QuizFiv {
 	}
 
 }
+

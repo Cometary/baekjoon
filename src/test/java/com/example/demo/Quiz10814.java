@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Quiz10814 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		
+		// 나이 순 정렬
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(br.readLine());

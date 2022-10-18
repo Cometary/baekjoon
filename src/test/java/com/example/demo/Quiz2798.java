@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Quiz2798 {
 
     public static void main(String[] args) throws IOException {
-    	
+    	// 블랙잭
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     	// 숫자 갯수와 목표 숫자 입력
     	String str = br.readLine();

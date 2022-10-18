@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Quiz2908 {
 
 	public static void main(String[] args) {
-		
+		// 상수
 		Scanner scan = new Scanner(System.in);
 			
 		int ta = scan.nextInt();

@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class Quiz8958 {
 
 	public static void main(String[] args) {
-
+		// OX 퀴즈
 		Scanner scan = new Scanner(System.in);
 		// 처음 숫자 입력
 		int leng = scan.nextInt();
