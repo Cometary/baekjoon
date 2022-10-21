@@ -13,38 +13,21 @@ public class Quiz2798 {
     	// 블랙잭
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     	// 숫자 갯수와 목표 숫자 입력
-    	String str = br.readLine();
     	// 입력값 분리
-    	StringTokenizer st = new StringTokenizer(str);
+    	StringTokenizer st = new StringTokenizer(br.readLine());
     	// N : 숫자 갯수 , M : 목표 숫자, T : 테스트
     	int answer = 0;
-    	int N,M = 0;
-    	int T = Integer.parseInt(st.nextToken());
-    	if(3<=T && T<=100) {
-    		N = T;
-    	}else {
-    		return;
-    	}
-    	T = Integer.parseInt(st.nextToken());
-    	if(10<=T && T<=300000) {
-    		M = T;
-    	}else {
-    		return;
-    	}
+    	int N = Integer.parseInt(st.nextToken());
+    	int M = Integer.parseInt(st.nextToken());
+
     	// 인자 입력
-    	String nstr = br.readLine();
     	// 인자 분리
-    	StringTokenizer nst = new StringTokenizer(nstr);
+    	StringTokenizer nst = new StringTokenizer(br.readLine());
     	List<Integer> arr = new ArrayList<Integer>();
     	// 인자 배열에 담기
-    	while(nst.hasMoreTokens()) {
-    		T = Integer.parseInt(nst.nextToken());
-    		if(0<T && T<=100000) {
+    	for(int i=0; i<N; i++) {
+    		int T = Integer.parseInt(nst.nextToken());
     			arr.add(T);
-    		}
-    		if(arr.size()==N) {
-    			break;
-    		}
     	}
     	
         boolean[] visited = new boolean[arr.size()];
