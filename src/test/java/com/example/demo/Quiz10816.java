@@ -16,25 +16,29 @@ public class Quiz10816 {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		HashMap<Integer, Integer> card = new HashMap<Integer, Integer>(N);
+		int key =0;
 		while(st.hasMoreTokens()) {
-			int key = Integer.parseInt(st.nextToken());
+			key = Integer.parseInt(st.nextToken());
 			if(card.get(key)!=null) {
 				card.put(key, card.get(key)+1);
 			}else {
 				card.put(key, 1);
 			}
 		}
-		
 		int M = Integer.parseInt(br.readLine());
 		st = new StringTokenizer(br.readLine());
+		int[] res = new int[M];
 		
 		for(int j=0; j<M; j++) {
-			int key = Integer.parseInt(st.nextToken());
+			key = Integer.parseInt(st.nextToken());
 			if(card.get(key)!=null) {
-				System.out.print(card.get(key)+" ");
+				res[j] = card.get(key);
 			}else {
-				System.out.print(0+" ");
+				res[j] = 0;
 			}
-		}	
+		}
+		for(int j=0; j<M; j++) {
+			System.out.print(res[j]+" ");
+		}
 	}
 }
