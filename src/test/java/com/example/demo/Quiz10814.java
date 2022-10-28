@@ -32,14 +32,11 @@ public class Quiz10814 {
 			}
 			
 		});
-		
 		StringBuilder sb = new StringBuilder();
 		for(int k=0; k<N; k++) {
 			sb.append(user[k][0] + " " + user[k][1] + "\n");
 		}
-		
 		System.out.println(sb);
-		
 	}
 }
 
