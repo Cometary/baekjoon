@@ -20,6 +20,7 @@ public class Quiz2908 {
 		String revb = revitb.reverse().toString();
 		int irevb = Integer.parseInt(revb);
 		
+		// 출력
 		if(ireva>irevb) {
 			System.out.println(ireva);
 		}else {
