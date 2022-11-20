@@ -3,7 +3,7 @@ package com.example.demo;
 import java.util.HashSet;
 
 public class Prog1845 {
-	//미해결
+	// 미해결
 	Solution sol = new Solution();
 	int[] numm = new int[]{1, 2, 3, 3};
 	sol.solution(numm);
